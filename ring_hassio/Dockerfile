@@ -8,5 +8,5 @@ ENV LANG C.UTF-8
 EXPOSE 3000/tcp
 
 #RUN apk add --no-cache -U nodejs npm ffmpeg git 
-RUN apk add --no-cache -U ffmpeg
+RUN apk add --no-cache -U python3
 
