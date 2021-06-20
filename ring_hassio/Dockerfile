@@ -5,14 +5,9 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 # Set shell
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 EXPOSE 3000/tcp
 
-RUN apk add --no-cache \
-    nodejs \
-    npm \
-    ffmpeg \
-    git && \
+RUN apk add --no-cache -U nodejs npm ffmpeg git && \
     cd / && \
     git clone https://github.com/jeroenterheerdt/ring-hassio && \
     cd ring-hassio/ring_hassio && \
