@@ -3,6 +3,7 @@
     "version": "1.35",
     "slug": "ringlivestream",
     "description": "A Home Assistant add-on to enable live streams of Ring Cameras.",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "url": "https://github.com/jeroenterheerdt/ring-hassio",
     "startup": "application",
     "arch": [
@@ -13,7 +14,6 @@
       "i386"
     ],
     "boot":"auto",
-    "image": "urkoin/{arch}-ring-hassio",
     "ports": {
         "3000/tcp": 3000
     },
